@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RICC</title>
+<link href="RICC _redesign.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+	<!-- hamburger menu that appears when the symbol is clicked (available on certain displays) -->
+	<div id="hambMenu">
+		<button id="homeMenuBtn" style="background-image: linear-gradient(#FFDE8C, #C29831); color:black; width:100%">HOME</button>
+		<button id="ticketsMenuBtn" style="width:100%">TICKETS</button>
+		<button id="guestsMenuBtn" style="width:100%">GUESTS</button>
+		<button id="storesMenuBtn" style="width:100%"> STORE</button>
+		<button id="detailsMenuBtn" style="display:block; width:100%" >EVENT DETAILS</button>
+		<button id="applicationsBtn" style="display:block; width:100%">APPLICATIONS</button>
+	</div>
+	
+	<!--HEADER DIV for toolbar & banner & logo -->
+	<div class="headerDiv">
+		
+		<div class="logo"> </div>
+		
+		<div class="flex-container">
+		  <div class="flex-item" style="font-weight: 400; font: bold; vertical-align: central;">Rhode Island Comic Con</div>
+		  <div class="flex-item" style="color: #F5CA5D;">November 2-4, 2018</div>
+		  <div class="flex-item" id="headerLocation">RI Convention Center</div>
+		</div>
+		
+		<!--TOOLBAR -->
+		<div id="toolbarDiv">
+			<div id="hamburgerMenu" onclick="showMenu()">  
+				<img src="hamburger menu.png" alt="MENU" style="height: 50%; width:auto;"/>  
+			</div>
+			<button style="background-image: linear-gradient(#FFDE8C, #C29831); color:black;">HOME</button>
+			<button>TICKETS</button>
+			<button>GUESTS</button>
+			<button>STORE</button>
+			<button id="detailsButton" >EVENT DETAILS</button>
+			<button id="applicationsButton">APPLICATIONS</button>
+		</div>
+		
+		<div id="yellowHeaderLine"/>
+	</div>
+	
+	<!--toggles hamburger menu item display when symbol is clicked -->
+	<script>
+		function showMenu() {
+			var menu = document.getElementById("hambMenu");
+			if (menu.style.display == "none") {
+				menu.style.display = "block";
+			} else {
+				menu.style.display = "none";
+			}
+		}
+	</script>
+	
+	<!-- MAIN PAGE GRID -->
+
+	<div class="mainpageDiv">
+		<div id="mottoPic"> </div>
+		<button id="mainTicketsBtn">BUY TICKETS TODAY</button>
+		<div id="centralViewer"> </div>
+		<div id="descriptionPic"> </div>
+		<button id="mainGuestsBtn">SEE FULL <br/> GUEST LIST</button>
+		
+		<div id="ad1"> </div>
+		<div id="ad2"> </div>
+	</div>
+		
+	<!-- FOOTER -->
+	<div id="footer"> 
+	<h4 id="footerText1">1 Sabin Street, Providence RI</h4>
+	<h4 id="footerText2"> <b> CONTACT US </b></h4>
+	</div>
+</body>
+	
+</html>
